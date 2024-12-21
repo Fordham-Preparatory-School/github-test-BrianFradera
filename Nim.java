@@ -57,10 +57,10 @@ public class Nim {
     }
     
     private boolean playAgain(){
-        
+        boolean keepPlaying = true;
         Scanner scan = new Scanner(System.in);
+        while (keepPlaying = true){
         System.out.print("Do you want to play again (y/n) ");
-        boolean keepPlaying = false;
         String x = scan.nextLine();
         if (x.equals("Y")||x.equals("y")||x.equals("Yes")||x.equals("yes")){
              return keepPlaying =true;
@@ -74,17 +74,15 @@ public class Nim {
             
         } 
         else{
-            System.out.print("Please put in a y or n");
-            playAgain();
+            System.out.println("Please put in a y or n");
+            
         }
-        
+    }
         return keepPlaying;
     
     
     
     }
     
-
-
     
 }
